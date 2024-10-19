@@ -1,0 +1,23 @@
+# 分流规则配置片段包含若干条分流规则；可通过资源引用的方式使用。
+# 片段文件将保存在 Quantumult X 目录下的 Profiles 子目录中。
+# 样例可参见 https://raw.githubusercontent.com/crossutility/Quantumult-X/master/filter.snippet
+
+;host, www.example.com, direct
+
+# 强制分流走蜂窝网络
+host-suffix, nas.ce.dog, direct, force-cellular
+
+# M-team直连
+host, kp.m-team.cc, direct
+host, *.m-team.cc, direct
+host, *.m-team.io, direct
+# steam代理
+host, api.steampowered.com, proxy
+# hxdemby代理
+host, hxd.as174.com, proxy
+host, cf.bili.rip, proxy
+# hxdemby代理
+host, *.fsm.name, proxy
+host, fsm.name, proxy
+# Hetzner直连
+host, *.hetzner.cloud, direct
