@@ -21,3 +21,5 @@ host, *.fsm.name, proxy
 host, fsm.name, proxy
 # Hetzner直连
 host, *.hetzner.cloud, direct
+# ce.dog代理
+host, *.ce.dog, proxy
